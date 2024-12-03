@@ -1181,141 +1181,163 @@ body{
 
 /*---------- BOOK NOW ----------*/
 
-.book-title{
-    text-align: center;
-    font-family: arial;
-    color: white;
-    margin-top: 170px;
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    box-sizing: border-box;
 }
 
-.book-title h1{
-    font-size: 74px;
-    font-weight: bolder;
-    font-family: inter;
+/* Title Section */
+.book-title {
+    background: linear-gradient(90deg, #076416d9 30%, #15b930c7);
+    padding: 50px 20px;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 11px 7px rgb(0 0 0 / 59%);
+    animation: moveUp 0.5s ease-out forwards;
+
+}
+
+.book-title h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
 }
 
 .book-title p {
-    margin-top: 20px;
-    font-size: 22px;
-}
-
-.book-title img{
-    opacity: 0.7;
-    margin-top: 50px;
-    width: 50px;
-}
-
-.book-previews{
-    display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
-    margin-top: 200px;
-    margin-left: 10px;
-    gap: 35px;
-}
-
-.book-previews button{
-    margin-top: 5px;
-    padding: 12px 16px;
-    border-radius: 30px;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 15px;
-    border-style: none;
-    background-color: #076416;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-.book-previews button:hover{
-    background-color: #15b930;
-    color: #3a3833;
-}
-
-
-.card{
-    box-shadow: 2px 2px 2px 2px lightgray;
-    border-radius: 30px;
-    border: 1px solid #076416;
-}
-
-.card img{
-    border-radius: 30px;
-}
-
-/* Booking Details */
-.form-container{
-    display: flex;
-    margin-top: 100px;
-    margin-left: 20px;
-    column-gap: 200px;
-}
-
-.form hr {
-    width: 100%;
-    border: 1px solid gray;
-}
-
-#fname, #checkin-date, #adults, #email {
-    margin-right: 30px;
-}
-
-#fname, #lname, #checkin-date, #checkout-date, #appt, #adults, #children, #email, #phone {
-    padding: 10px 15px;
-    border-radius: 15px;
-    border-style: none;
-    border: 2px solid gray;
-}
-
-.book-date, .people {
     margin-top: 15px;
-    display: flex;
-    gap: 20px; 
+    font-size: 1.2rem;
 }
 
-.date-field, .number-people {
-    display: flex;
-    flex-direction: column;
-}
-
-#appt{
+.book-title img {
+    display: block;
     margin-top: 30px;
+    width: 40px;
 }
 
-.people, .info, .question, .selected-hotel{
-    margin-top: 30px;
+/* Book Previews Section */
+.book-previews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
-#home{
-    margin-top: 30px;
-    padding: 10px 15px;
-    border-radius: 15px;
-    border-style: none;
-    border: 2px solid gray;
-    width: 465px;
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.book-previews button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #076416;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.book-previews button:hover {
+    background-color: #15b930;
+}
+
+/* Booking Details Section */
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+}
+
+.form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form input,
+.form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.form input:focus,
+.form select:focus {
+    border-color: #076416;
+    outline: none;
 }
 
 .form input[type="submit"] {
-    margin-top: 30px;
-    padding: 10px 15px;
-    background-color: grey; 
-    color: black; 
-    border: none; 
-    border-radius: 15px; 
-    font-size: 16px; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
+    background-color: #076416;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-#hotel{
-    padding: 10px 15px;
-    border-radius: 15px;
-    border-style: none;
-    border: 2px solid gray;
-    width: 300px;
+.form input[type="submit"]:hover {
+    background-color: #15b930;
 }
 
-.form-photo img{
-    margin-top: 50px;
+/* Form Image Section */
+.form-photo {
+    text-align: center;
+    align-self: center;
+}
+
+.form-photo img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .book-title h1 {
+        font-size: 2rem;
+    }
+
+    .book-previews {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 /*---------- FOOTER ----------*/
@@ -2885,6 +2907,8 @@ body{
     background-color: #076416;
     color: #ffffff;
     font-weight: bold;
+    animation: moveUp 0.5s ease-out forwards;
+
 }
 
 .book-previews button:hover{
@@ -2901,6 +2925,12 @@ body{
 
 .card img{
     border-radius: 30px;
+    height: 150px;
+    background-color: rgb(219 169 121);
+    padding: 4.5px;
+    box-shadow: 0px 5px 4px rgb(0 0 0);
+    animation: moveUp 0.5s ease-out forwards;
+
 }
 
 /* Booking Details */
