@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-H+Kz8lKl2e91pXITZIkD6jV1crJdWnM07cIeycftfuE7l2tXfrGtWuxIIS0aZ8iZO3Hs5K3tJLTBZlmtIlZ0NQ==" crossorigin="anonymous" />
+
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="styles.css" /> 
+        <title> Cabuyao Insider </title>
+    </head>
+
+    <body onload="openTab('Home')">
+
+        <!--TOP NAVIGATION BAR-->
+        <div class="topnav">
+            <button class="book-now-button" onclick="openTab('Book')">Book Now</button>
+            <button onclick="openTab('About')">About</button>
+            <button onclick="openTab('Culture')">Culture</button>
+            <button onclick="openTab('Foods')">Foods</button>
+            <button onclick="openTab('Destination')">Destination</button>
+            <button onclick="openTab('Home')">Home</button>
+        </div>
+
+        <!-- HOME PAGE TAB -->
+        <div id="Home" class="tab-content active">
+
+            <div class="first">
+                <!--TITLE-->
+                <div class="title">
+                    <p>Explore Cabuyao: <br> Where Flavor, Adventure and, <br> Tradition Unite</p>
+                </div>
+
+                <!--HOME PAGE 4 COLLAGE PICTURES-->
+                <div class="fourPics">
+                    <img src="https://img.recraft.ai/cz19P6x7YoknW4OnCqkO2pFh-vmni09p0QqvTtPa6as/rs:fit:1024:1024:0/q:95/g:no/plain/abs://prod/images/2443636d-6f73-4ab7-8a3d-ba1e7164471c@jpg" alt="Buko Rolls" title="Buko Roll">
+                    <img src="https://img.recraft.ai/ldFETNYFXfUBzRcMmCW-wRVtx00AuOhVXZy8hYLVvwI/rs:fit:1024:1024:0/q:95/g:no/plain/abs://prod/images/35d7b712-6e06-48cd-b402-a75c8d814faf@jpg" alt="Batingaw Festival" title="BatingawFes">
+                    <img src="https://img.recraft.ai/8JpYhxK3DFzrHCxlG6ehCCophbXTMng_p7DhuemhTrI/rs:fit:1024:1024:0/q:95/g:no/plain/abs://prod/images/d8e48502-8b4d-430a-ab0d-c5ceba2965d0@jpg" alt="Cabuyao Plaza" title="CabuyaoPlaza">   
+                    <img src="https://img.recraft.ai/dPLaMKgc9shVZ7OtQ6vN6u6j_jS-RIb133p5MqanzgE/rs:fit:1024:1024:0/q:95/g:no/plain/abs://prod/images/63fd1dcb-67aa-4ab5-a62a-246d7db7cfa1@jpg" alt="Marcos Twin Mansion" title="MTM">
+                </div>
+
+                <!--INTRODUCTION OF CABUYAO-->
+                <div class="intro">
+                    <img src="https://img.recraft.ai/SHRGzx6sxnJVYzYAaCI6A8KWMOv70gAxHG8CTx_YWfw/rs:fit:1024:1024:0/q:95/g:no/plain/abs://prod/images/d8371fee-3955-40b3-8116-0317a235b31b@jpg" alt="Welcome to Cabuyao">
+                    <h1>A Tapestry of Industry, Culture, and Heritage</h1>
+                    <p>
+                        Cabuyao, situated in Laguna, Philippines, is a dynamic municipality known for its industrial growth and strategic location near Metro Manila. Home to a thriving economy driven by manufacturing and commerce, it offers diverse employment opportunities and modern amenities amidst its rich cultural heritage. As Cabuyao continues to evolve and embrace modernity, it remains firmly rooted in its cultural traditions and historical legacy. With its blend of industrial progress, culinary delights, and cultural vibrancy, Cabuyao offers visitors a unique and enriching experience that embodies the essence of Filipino hospitality and heritage.
+                    </p>
+                </div>
+            </div>
+
+            <!-- PREVIEWS -->
+            <!-- DESTINATION PREVIEW -->
+            <div class="previews">
+                <h2>Destination</h2>
+                <p>
+                    Explore the rich heritage and scenic beauty of Cabuyao, Laguna, <br> where every destination tells a unique story. From historical <br> landmarks to natural wonders, Cabuyao offers an unforgettable <br> travel experience.
+                </p>
+
+                <div class="carousel">
+
+                    <div class="slider responsive">
+                        <div>
+                            <a href="javascript:void(0);" onclick="openDestinationTab('polycarpChurch')">
+                                <img src="https://2.bp.blogspot.com/-2awrIUccL-M/TivTFWy5pPI/AAAAAAAAEeg/kBMp6ydLcPU/s1600/SAM_5185.JPG" title=""/>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:void(0);" onclick="openDestinationTab('twin-mansion')">
+                                <img src="https://th.bing.com/th/id/OIP.nmHDdGk4l1Z4J6syxvk2dwHaEK?pid=ImgDet&w=474&h=266&rs=1" />
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:void(0);" onclick="openDestinationTab('gabbys-farm')">
+                                <img src="https://th.bing.com/th/id/OIP.yAn90MPB_PpqYe7_B8OvywHaEK?rs=1&pid=ImgDetMain" />
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="javascript:void(0);" onclick="openDestinationTab('sta-elena')">
+                                <img src="https://live.staticflickr.com/3354/3494474408_68e8e0e5b6_z.jpg" />
+                            </a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="prev">
+                        <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                    </div>
+                    <div class="next">
+                        <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                    </div>        
+                    
+                </div>
+            </div>
+            <!-- END OF DESTINATION PREVIEW -->
+
+            <!-- FOOD PREVIEW -->
+            <div class="previews">
+                <h2>Food</h2>
+                <p>
+                    Savor the authentic flavors of Cabuyao, Laguna, where <br>traditional dishes and local delicacies tantalize your taste buds. <br>From savory delights to sweet treats, experience the culinary <br>heritage that makes Cabuyao a food lover's paradise.
+                </p>
+
+                <div class="carousel">
+                    <div class="slider responsive">
+
+                        <div>
+                            <a href="javascript:void(0);" onclick="openFoodTab('*****-pao')">
+                                <img src="https://1.bp.blogspot.com/-5uZWkiP7nPE/WN5oPUNKCzI/AAAAAAAAAHg/-CBIiwgcpQMjOEDGVD0WjwpvddCwy7XKwCLcB/s1600/20170119_161006.jpg" />
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="javascript:void(0);" onclick="openFoodTab('buko-roll')">
+                                <img src="https://1.bp.blogspot.com/-vXpYZmWJezs/VwqoBzAl6XI/AAAAAAAARRI/4gQ65jEsJL05-QuKKJYZPsRuiMmp8Ttng/s1600/Aparri%2BKuya%2BJ%2BBuko%2BRoll%2BCagayan%2B9%2BB.jpg" />
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="javascript:void(0);" onclick="openFoodTab('kapeng-barako')">
+                                <img src="https://i0.wp.com/thefilipinochronicle.com/wp-content/uploads/2022/11/Screenshot-2022-11-07-002616.png?fit=1048%2C678&ssl=1" />
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="javascript:void(0);" onclick="openFoodTab('la-serena')">
+                                <img src="https://th.bing.com/th/id/OIP.-HgPcxyyobxtsCdinTmHdQHaH5?rs=1&pid=ImgDetMain" />
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="prev">
+                        <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                    </div>
+                    <div class="next">
+                        <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- END OF FOOD PREVIEW -->
+            
+            <!-- CULTURE PREVIEW -->
+            <div class="previews">
+                <h2>Culture</h2>
+                <p>
+                    Immerse yourself in the vibrant culture of Cabuyao, Laguna, <br> where traditional festivities and local customs bring the <br>community to life. Discover the rich heritage and warm <br> hospitality that define this charming town.
+                </p>
+
+                <div class="carousel">
+                    <div class="slider responsive">
+                        
+                        <div>
+                            <a href="javascript:void(0);" onclick="openCultureTab('batingaw')">
+                                <img src="https://4.bp.blogspot.com/-hEqAk20cpm4/WQIaFVzVvYI/AAAAAAAAB88/6EAH-YrKm3oZzceCs_y1ZCEVL2RdcQxlwCLcB/s1600/maxresdefault.jpg" />
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="javascript:void(0);" onclick="openCultureTab('christmas')">
+                                <img src="https://i.ytimg.com/vi/S6Jpa2tmcnQ/maxresdefault.jpg" />
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="javascript:void(0);" onclick="openCultureTab('sto-nino')">
+                                <img src="https://1.bp.blogspot.com/_ZwRPVQ1_mWU/TTbkp6rBrpI/AAAAAAAAAFc/QWW0OkP2jt4/s1600/16012011372.jpg" />
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="javascript:void(0);" onclick="openCultureTab('city')">
+                                <img src="https://th.bing.com/th/id/OIP.Grklj-UDSEMubgplN6YKZQHaHY?rs=1&pid=ImgDetMain" />
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="prev">
+                        <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                    </div>
+                    <div class="next">
+                        <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                    </div>
+                    
+                </div>
+            </div>
+           <!-- END OF CULTURE PREVIEW -->
+
+        </div> 
+        <!-- END OF HOME PAGE -->
+
+        <!-- DESTINATION TAB -->
+        <div id="Destination" class="tab-content">
+
+            <div class="destination-title">
+                <h1>Explore the Wonders</h1>
+                <p>Uncover the hidden treasures and vibrant experiences that make this <br>town a must-visit destination</p>
+                <a href="#" id="scrollDown"><img src="https://imagetolink.com/ib/QSimiEROcu.png" alt=""></a>
+            </div>
+
+            <!-- St. Polycarp Church -->
+            <div class="polycarp-church" id="polycarpChurch">
+                <div class="church-essay">
+                    <h1>St. Polycarp Parish Church</h1>
+                    <h4> <b> Locaion:</b> Poblacion Uno, Cabuyao, Laguna</h4>
+                    <h4><b>Contact:</b> (049) 531 2168</h4>
+                    <h4><b>Google Reviews:</b> 4.7/5.0 (163 Reviews)</h4>
+                    <button onclick="document.location='https://www.google.com/maps/place/St.+Polycarp+Parish+Church+-+Poblacion,+Cabuyao+City,+Laguna+(Diocese+of+San+Pablo)/@14.2797565,121.1214905,17z/data=!3m1!4b1!4m6!3m5!1s0x3397d86023b27419:0x6567e7de985425f0!8m2!3d14.2797513!4d121.1240654!16s%2Fg%2F11xsrd1zb?entry=ttu'">Directions</button>
+                    <p>
+                        A living reminder of the rich fabric of Catholic and Philippine history, St. Polycarp Parish in Cabuyao, Laguna, is more than just a house of worship. Founded centuries ago during the Spanish colonization era, the parish has endured the test of time, witnessing the victories and hardships experienced by the Filipino people. Catholicism deeply ingrained Filipino society during the Spanish era, with establishments like St. Polycarp Parish serving as strongholds of the faith and hubs of communal activity. The parish persevered during times of unrest and resistance, giving the faithful comfort and fortitude amid the chaos of colonization.
+                        <br><br>
+                        Despite Polycarp Parish remaining steadfast in its adherence to Catholic beliefs and principles, it continued to change to meet the needs of its growing membership as the Philippines entered the modern era. The parish's history embodies the enduring legacy of faith and fortitude that defines the country's cultural identity, reflecting the Filipino spirit's tenacity and perseverance. St. Polycarp Parish is a living example of the Filipino people's unwavering faith, a source of inspiration and hope for future generations. Its historical significance serves as a reminder of the Philippines' long Catholic past and the critical role that churches have played in shaping the country's history and culture.
+                        <br><br>
+                        In conclusion, the parish acts as a hub for social and cultural events in Cabuyao. The celebration of common traditions and practices helps the parish preserve the rich cultural heritage of the Filipino people for future generations. Festivals, get-togethers, and community events unite people and build a sense of belonging among inhabitants.
+                    </p>
+                </div>
+
+                <div class="church-photos">
+                    <img src="https://th.bing.com/th/id/OIP.4LSIDfkqWhN3Sj8-F7kg3QHaFf?rs=1&pid=ImgDetMain" alt="outside St. Polycarp Church">
+                    <img src="https://pbs.twimg.com/media/E-qKnl0XoAILgCE.jpg" alt="St. Polycarp Church" title="way">
+                    <img src="https://misadito.com/images/churches/Laguna-Cabuyao-St-Polycarp-Parish-Church.jpg" alt="St. Polycarp Church">
+                    <img src="https://2.bp.blogspot.com/-QXvn3EJOgr4/WK902u7bzdI/AAAAAAAAATo/Yr7o08t2QikJNKGQboGQZBG_9lK11q6OgCLcB/s1600/Inside%2BSt.%2BPolycarp%2BChurch%2Bin%2BIzmir.jpg" alt="Inside St. Polycarp Church">
+                </div>
+            </div>
+            
+            <!-- Marcos Twin Mansion -->
+            <div class="twin-mansion" id="twin-mansion"> 
+                <div class="mansion-photos">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjozamO4xtFGi3UpX1NWwzXyFEud_FG3ODM64eykMPAVJD9HkWzGAf_jqy67witfRQaoNj6kzXutWzVe0SygIxRS6gqkD7_0kw1eDzZi6i42bp5wxhiIJPB_G6Vo9o4AvQJ6Igny1FuwSU/s1600/DSC_0057.jpg" alt="marcos twin mansion" title="https://belenjustinewesley19.blogspot.com/2015/04/mansion-ni-marcos-canlubang-laguna.html">
+                </div>
+
+                <div class="mansion-essay">
+                    <h1>Marcos Twin Mansion</h1>
+                    <h4><b>Location:</b> Brgy. Casile, Cabuyao, Laguna</h4>
+                    <h4><b>Opened:</b> 1987</h4>
+                    <h4><b>Google Reviews:</b> 4.4/5.0 (830 Reviews)</h4>
+                    <button onclick="document.location='https://www.google.com/maps/place/Marcos+Twin+Mansion/@14.2033751,121.0393907,17z/data=!3m1!4b1!4m6!3m5!1s0x33bd7c8e887a2c6f:0x743411b190506a9a!8m2!3d14.2033699!4d121.0419656!16s%2Fg%2F11cp5fy5g4?entry=ttu'">Directions</button>
+                    <p>
+                        Constructed in the 1970s, the Twin Mansions were envisioned as luxurious retreats for the Marcos family, showcasing their immense wealth and influence. Situated on sprawling estates, these palatial residences were designed to exude grandeur and extravagance, featuring lavish amenities and architectural flourishes that befitted the stature of the First Family.
+                        <br><br>
+                        The Twin Mansions are something to behold, with a unique architectural style that blends modern and traditional Filipino design. From their grand facades to their meticulously cared-for gardens, these buildings are a tribute to the skill and creativity of the architects and craftsmen who built them. Every little detail, from the fancy balconies to the intricate woodwork, reflects the wealth and elegance of their owners. But behind their beauty lies a shadow of controversy. The Twin Mansions serve as a reminder of the dark days of the Marcos regime. During martial law, these luxurious homes stood as symbols of the Marcos family's power and corruption, starkly contrasting with the poverty and suffering experienced by many Filipinos at the time.
+                        <br><br>
+                        Today, the Twin Mansions hold a unique place in Philippine history, serving as a tangible link to a bygone era of political turmoil and social upheaval. As relics of the Marcos era, they offer valuable insights into the complexities of power and privilege in Philippine society, sparking discussions about accountability, justice, and national identity.In the heart of Cabuyao, Laguna, the Twin Mansions stand as silent witnesses to a chapter in Philippine history that continues to shape the nation's identity and trajectory. As historical artifacts, they remind us of the complexities of power, privilege, and responsibility, urging us to strive for a more just and equitable society for all Filipinos.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Gabbys Farm -->
+            <div class="gabbys-farm" id="gabbys-farm">
+                <div class="gabbys-essay">
+                    <h1>Gabby's Farm: Farm Stay</h1>
+                    <h4><b>Location:</b> Brgy. Casile, Cabuyao, Laguna</h4>
+                    <h4><b>Contact: </b>Contact: +63 918 921 9463</h4>
+                    <h4><b>Google Reviews: </b>4.8/5.0 (39 Reviews)</h4>
+                    <button onclick="document.location='https://maps.app.goo.gl/DWBjZjaQsL7orsTH6'">Direction</button>
+                    <p>
+                        Gabby's Farm is the ideal getaway for those looking to escape the hectic pace of city life, nestled in the tranquil surroundings of Cabuyao, Laguna. This charming farm stay offers a unique blend of activities and relaxation, making it perfect for singles, couples, families, and groups. With its cool climate and lush vegetation, Gabby's Farm provides more than just accommodation; it's a rejuvenating experience that reconnects you with nature and the simplicity of country living.
+                        <br><br>
+                        Gabby's Farm features three enchanting villas—Narra, Yambo, and Antipolo—each named after native trees. The Narra villa, named after the national tree of the Philippines, symbolizes resilience and cultural pride. The Yambo villa offers a peaceful retreat with its lush canopy and tropical charm, ideal for summertime. The Antipolo villa, named after a large native tree, provides a unique stay with its botanical and historical significance. Each villa boasts a spacious yard, balcony, and private plunge pool, creating a warm and inviting space for guests to relax and rejuvenate.
+                        <br><br>
+                        In addition to being a place for relaxation, Gabby's Farm hosts a variety of events and activities. It's the perfect venue for intimate weddings, team-building activities, portrait sessions, and other special events. The farm offers engaging activities like the "Pick, Harvest & Pay" program, allowing visitors to experience agricultural life firsthand by picking fresh produce such as lanzones, lettuce, cranberries, cacao, and lemons. Its proximity to Tagaytay ensures a delightfully cool climate, enhancing the overall enjoyment of your visit. Take the opportunity to revitalize your body and mind while savoring the tranquility and beauty of this exceptional farm stay.
+                    </p>
+                </div>
+
+                <div class="gabbys-photo">
+                    <img src="https://static.wixstatic.com/media/557b9f_921b539f0b1f41bfb5a9873c93bf90e7~mv2.jpg/v1/fill/w_439,h_552,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/557b9f_921b539f0b1f41bfb5a9873c93bf90e7~mv2.jpg" alt="gabbys farm" title="https://www.gabbysfarm.com/">
+                    <img src="https://static.wixstatic.com/media/557b9f_8d9eeddb969c4d6c992744d7fee57f74~mv2_d_2496_1664_s_2.jpg/v1/fill/w_728,h_485,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/557b9f_8d9eeddb969c4d6c992744d7fee57f74~mv2_d_2496_1664_s_2.jpg" alt="gabbys farm" title="https://www.gabbysfarm.com/">
+                </div>
+            </div>
+
+            <!-- Sta Elena Fun Farm -->
+            <div class="sta-elena" id="sta-elena">
+                <div class="elena-photos">
+                    <img src="https://1.bp.blogspot.com/-PgyA9qDkeVo/WT4gtJnbGWI/AAAAAAAAbB8/Go7rE3l-bRQ0_OhBnzh-UJ09qgNxEDcNwCLcB/s1600/A%2BDSC08183%2Bcopy.jpg" alt="sta elena fun farm" title="https://www.starfishmediaph.com/photos/fun-farm-at-sta-elena-kiddie-party-01.JPG">
+                </div>
+
+                <div class="elena-essay">
+                    <h1>Sta. Elena Fun Farm</h1>
+                    <h4><b>Location:</b> Boundary between Cabuyao & Malitlit, Sta. Rosa</h4>
+                    <h4><b>Contact: </b>0920 913 1349</h4>
+                    <h4><b>Google Reviews: </b>4.5/5.0 (495 Reviews)</h4>
+                    <button onclick="document.location='https://www.google.com/maps/place/Sta.+Elena+Fun+Farm/@14.2455573,121.0801506,17z/data=!3m1!4b1!4m6!3m5!1s0x33bd62b59bd9d495:0x6e5c4897ede55077!8m2!3d14.2455521!4d121.0827255!16s%2Fg%2F1tdg59tc?entry=ttu'">Direction</button>
+                    <p>
+                        “Adventure awaits!” as one could say about the Sta.Elena Fun Farm, located in Brgy. Diezmo, Pulo, Cabuyao City, it is one of the fun and exciting places to visit here in Cabuyao, especially if you’re looking for a fun and new way to reconnect with nature.
+                        <br><br>
+                        The Fun Farm is a recreational farm in which kids, and adults, are able to explore their hectares of land. It has so many activities to try on, like sandhouse play, rope and obstacle courses, garden maze, zip lines, and many more. Visitors are also allowed to pet some of their pets and even lets you feed them free carrots that are provided by the farm. It is a well-known institute because of their beautiful hectares of landscape and activities that the kids will love. The Fun  Farm is open from Tuesdays to Sundays at 9AM to 4PM only. 
+                        <br><br>
+                        It is a popular destination that showcases the simple joys of nature and adventure. The Fun Farm also offers educational tours, making it an ideal spot for students to learn about and appreciate the importance of various aspects of nature. With so many activities to enjoy, the Sta. Elena Fun Farm guarantees a day filled with fun and unforgettable experiences for everyone.
+                    </p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <!-- FOODS TAB -->
+        <div id="Foods" class="tab-content">
+            <div class="food-title">
+                <h1>Taste the Tradition</h1>
+                <p>Indulge in the culinary heritage of Cabuyao with our mouthwatering delicacies <br>that reflect the rich flavors and traditions of the region</p>
+                <a href="#" id=scrollDown1><img src="https://imagetolink.com/ib/QSimiEROcu.png" alt=""></a>
+            </div>
+
+            <div class="*****-pao" id="*****-pao">
+                
+                <div class="container-two">
+                    <div class="container-three">
+
+                        <div class="*****-photo">
+                            <img src="https://1.bp.blogspot.com/-5uZWkiP7nPE/WN5oPUNKCzI/AAAAAAAAAHg/-CBIiwgcpQMjOEDGVD0WjwpvddCwy7XKwCLcB/s1600/20170119_161006.jpg" alt="***** pao" class="image" title="https://www.foxyfolksy.com/wp-content/uploads/2020/12/*****-pau-thumbnail.jpg">
+                        </div>
+                        
+                        <div class="*****-essay">
+                            <h1>***** Pao</h1>
+                            <h3>San's Bakeshop (Home of the Original ***** Pao)</h3>
+                            <h4><b>Location: </b>Brgy.Banay-banay, Cabuyao, Laguna</h4>
+                            <h4><b>Google Reviews: </b></h4>
+                            <button onclick="document.location='https://www.google.com/maps/place/Sans+Bake+Shop/@14.2204068,121.1368612,17z/data=!3m1!4b1!4m6!3m5!1s0x33bd624dd2f61bdd:0xdad580dca6c48fb!8m2!3d14.2204016!4d121.1394361!16s%2Fg%2F11rq1ldvxx?entry=ttu'">Direction</button>
+                            <p>
+                                Cabuyao is one of the cities that offers some of the unique cuisines in Laguna, unbeknownst to their rich heritage, their culinary boasts a variety of dishes that can showcase the creativity and flavors of the Filipino cuisine. 
+                                <br><br>
+                                ***** pao is one of those examples, it is a Filipino steamed bun that combines the elements of the two of the most popular Filipino dishes, ***** and siopao. *****, a steamed rice cake, and Siopao, a steamed bun filled with savory meat. This dish has an exterior that resembles a *****, being soft, fluffy, and slightly sticky, while inside has a filling similar to siopao, often made with savory ingredients and hard-boiled eggs. This modern dish of two of the most popular Filipino treats, is a testament to the innovative minds of Filipino cuisine, offering a delightful blend of sweet and savory flavors in every bite. 
+                                <br><br>
+                                Tasting this dish for the first time is a one of a kind experience and definitely one of the core memories you can take in visiting Cabuyao. ***** Pao has been spread out along with the surrounding cities, however most of the tourists and residents alike, typically prefers the ***** Pao in the San’s Bakeshop in Katapatan than the bakeries on the surrounding cities, because of the freshness and fluffiness of our ***** pao. It really is a must try delicacy here in Cabuyao, especially for the tourists. 
+                            </p>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </br>
+    </br>
+</br>
+</br>
+
+            <!-- Buko Roll -->
+            <div class="buko-roll" id="buko-roll">
+                <div class="buko-essay">
+                    <h1>Buko Rolls</h1>
+                    <h3>Cabuyao Original Buko Roll Bakery</h3>
+                    <h4><b>Location: </b>Blk 1 Lot 28 Katapatan Homes Banay Banay Homes, Cabuyao, Philippines</h4>
+                    <h4><b>Contact: </b>(+63) 977 788 8337</h4>
+                    <h4><b>Facebook Page Reviews: </b>5/5 (80 Reviews)</h4>
+                    <button onclick="document.location='https://www.google.com/maps/place/Cabuyao+Original+Buko+Roll/@14.2565118,121.1279571,17z/data=!3m1!4b1!4m6!3m5!1s0x33bd6329bc675fc5:0x6c68e5e3594ee0ef!8m2!3d14.2565066!4d121.130532!16s%2Fg%2F11thp442bn?entry=ttu'">Direction</button>
+                    <p>
+                        Cabuyao takes great pride in our culinary heritage, and there is one delicacy that has always stood out as the most well-known delicacy in Cabuyao—the Buko Rolls. It is a cylindrical pastry with golden-brown, crisp exterior and a buko filling that encapsulates the core of Cabuyao's rich tradition and ingenuity. Originated from the well-known traditional Buko Pie, one of the delicacies here in Laguna, only smaller, more consumable, and tasty.
+                        <br><br>
+                        Buko Rolls, as they call them, are these little bundles of joy that have become popular in the past few years due to being showcased in various social media platforms, which made the interest and taste buds of food enthusiasts go see and try the Home of the Original Buko Roll just to experience the culinary genius of these buko rolls. This popularity eventually leads to introducing more new and exciting flavors of the buko roll, yet the original remains a classic. It embraced innovation with variations that add an extra layer of delight, such as ube, macapuno, and pineapple buko rolls. However, beyond the hype, what truly makes the buko roll a must-try delicacy is the sense of pride that pervades in every bite. 
+                        <br><br>
+                        Indulging in the flavors of the buko roll is not just about satisfying your taste buds; it is about immersing yourself in this journey that celebrates the spirit of the community and honors the traditions of the past generations. So, whether you're a foodie in search of new culinary experiences or simply someone looking to explore, a trip to Cabuyao to taste the iconic buko roll is an experience not to be missed.
+
+                    </p>
+                </div>
+
+                <div class="buko-photos">
+                    <img src="https://cf.shopee.ph/file/b21291462bc373831349538a208cafa5" alt="buko roll" title="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCjqK4DFvsdthjIsJjB9I04mNzcMh6aAuONIQqTr_P82IKlxqqrvXCc4KMbt0zDQC5eUo&usqp=CAU
+                    ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO6UQflNd-8xK4-S69EnGwhFLisih1LXV9l1dZ1NidgN4SxzcPPWipVWR_wR3wKfYduiY&usqp=CAU" alt="buko roll" title="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO6UQflNd-8xK4-S69EnGwhFLisih1LXV9l1dZ1NidgN4SxzcPPWipVWR_wR3wKfYduiY&usqp=CAU">
+                </div>
+            </div>
+
+            <!-- Kapeng Barako -->
+            <div class="kapeng-barako" id="kapeng-barako">
+                <div class="barako-photos">
+                    <img src="https://i0.wp.com/thefilipinochronicle.com/wp-content/uploads/2022/11/Screenshot-2022-11-07-002616.png?fit=1048%2C678&ssl=1" alt="kapeng barako" title="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjIbSYpEeqpYCtpNSu922EFsn9xHpNrmFrA2D1YJzyle5ken2oQ18HHUDCPEFdc0EG8y8&usqp=CAU">
+                </div>
+
+                <div class="barako-essay">
+                    <h1>Kapeng Barako</h1>
+                    <h3>Cafe de Cabuyao</h3>
+                    <h4><b>Location: </b>Brgy.Casile, Cabuyao, Laguna</h4>
+                    <h4><b>Google Reviews: </b>4.8/5 (19 Reviews)</h4>
+                    <button onclick="document.location='https://www.google.com/maps/place/cafe+de+cabuyao/@14.1766224,121.0211605,17z/data=!3m1!4b1!4m6!3m5!1s0x33bd7ba68146a7a1:0xc1340803b60a85ba!8m2!3d14.1766172!4d121.0237354!16s%2Fg%2F11f62nf5vj?entry=ttu'">Direction</button>
+                    <p>
+                        Kapeng Barako is a type of Coffee liberica that has been cultivated in the Philippines for hundreds of years. It has a full-bodied flavor and an intense, somewhat woody aroma that deviates from other coffee types. This type of coffee generation started previously only in the provinces of Batangas and Cavite but nowadays, it has become a way to define Filipino society. The drink’s name Barako in Filipino refers to a person or a stud, which means that the drink has a strong and robust approach to the person that ingests it. 
+                        <br><br>
+                        Café de Cabuyao is considered a treasure for those who are truly fond of coffee and want to taste the whole range of Kapeng Barako and the flavor and also enjoy the view in Brgy. Casile. The café offers a variety of ways to enjoy this Filipino classic. From traditional brewing methods to modern twists, such as cold brews and flavored variations, there is something to suit every palate. 
+                        <br><br>
+                        One of the key aspects that sets Café de Cabuyao apart is its commitment to supporting local coffee farmers. By sourcing Kapeng Barako directly from farmers in Cabuyao, the café ensures that its coffee is of the highest quality while also contributing to the sustainability of local agriculture. This practice not only helps preserve the tradition of Kapeng Barako cultivation but also supports the livelihoods of Filipino farmers. It is a must visit for coffee lovers and travelers alike, it is truly an astonishing and one of a kind experience.
+
+                    </p>
+                </div>
+            </div>
+           
+            <!-- La Serena  -->
+            <div class="la-serena">
+                <div class="serena-essay">
+                    <h1>Baby Back Ribs</h1>
+                    <h3>La Serena Restaurant</h3>
+                    <h4><b>Location: </b>Brgy. Dos Elsol Plaza, Cabuyao, Philippines</h4>
+                    <h4><b>Contact: </b>(+63) 920 488 9902</h4>
+                    <h4><b>Facebook Page Reviews: </b>3.8/5 (376 Reviews)</h4>
+                    <button onclick="document.location='https://www.google.com/maps/place/La+Serena+Restaurant/@14.2768178,121.1197917,17z/data=!3m1!4b1!4m6!3m5!1s0x3397d91a5cc0ea01:0xc0d5f5c815a2e35c!8m2!3d14.2768126!4d121.1223666!16s%2Fg%2F11t9dpk6hh?entry=ttu'">Direction</button>
+                    <p>
+                        If you want to experience a Mixed cuisine in the middle of Laguna, then visiting La Serena de Cabuyao is a must. It has become a favorite place among the residents of the area and not only. The inviting atmosphere and delicious menu will make you not want to leave the place.
+                        <br><br>
+                        The food that they offer, not only encapsulates the authenticity of the cuisine of the different countries, it also highlights some of our own. It became a well-known spot around the area, with it being one of the most visited places in the city despite it being a bit pricey. One of their star dishes, and one of my favorites, is their Ribs of Pork, which is very tender, well-cooked, and savory, definitely a must-try in downtown Cabuyao.  
+                        <br><br>
+                        One of the best features of the restaurant is probably the ambiance it has. From my experience, it is an amazing place to visit if you are looking for a spot to eat during your day-off, or decide to spend a romantic evening with your partner, as well as to take the nearest people for a nice meal. Moreover, La Serena de Cabuyao’s staff is friendly and welcoming, thus making the service great.
+
+                    </p>
+                </div>
+
+                <div class="serena-photos">
+                    <img src="https://th.bing.com/th?id=OLC.s8B1T+3axfz5Rw480x360&rs=1&pid=ImgDetMain" alt="la serena foods" title=" https://www.facebook.com/laserena.ph/">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CULTURE TAB -->
+        <div id="Culture" class="tab-content">
+            <div class="culture-title">
+                <h1>Cultural Diversity</h1>
+                <p>Discover Cabuyao's vibrant culture and lively festivals, <br>where every celebration is a testament to the town's rich heritage</p>
+                <a href="" id="scrollDown2"><img src="https://imagetolink.com/ib/QSimiEROcu.png " alt=""></a>
+            </div>
+
+            <div class="batingaw-festival" id="batingaw">
+                <div class="batingaw-essay">
+                    <h1>Batingaw Festival</h1>
+                    <h4><b>Date:</b> January 16</h4>
+                    <p>
+                        The Batingaw Festival, one of the joyful celebrations with deep tradition and folklore in the heart of the municipality of Cabuyao, Philippines. The celebration lasts for five days and is a yearly celebration of the famous Kampanang Ginto in which the said place is considered a city rich of wealth and success. Running for three days there were a number of events scheduled throughout the Batingaw festival such as street dancing and cultural exhibitions, all of which symbolizes the heart and soul of this vibrant town with a rich history.
+                        <br><br>
+                        Cabuyao, Philippines hosts the colorful Batingaw Festival, which draws its inspiration from the myth of the mysterious Kampanang Ginto, a bell believed to bring wealth. The celebration begins with the ringing of church bells, symbolizing abundance for all attendees. The golden bell serves as the focal point of the Kampanang Ginto Parade, which showcases inventiveness and tradition. Exhibitions and contests celebrate local skill and craftsmanship, while colorful street dance and cultural presentations highlight Cabuyao's distinctive background. A stunning firework show marks the end of a week of festivities and leaves a lasting impression on all those who attend the festival.
+                        <br><br>
+                        In conclusion, the Batingaw Festival exemplifies Cabuyao's rich cultural legacy and thriving sense of community. The festival fosters a sense of unity and pride in their shared identity by uniting people through its colorful events and sincere celebrations. The Batingaw Festival serves as a reminder of the timeless values that unite the people of Cabuyao while also serving as a beacon of hope and prosperity for future generations, inspired by the legend of the Kampanang Ginto.
+                    </p>
+                </div>
+
+                <div class="batingaw-photos">
+                    <img src="https://imagetolink.com/ib/BHg4LeX724.png" alt="batingaw festival" title="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/428615388_707574691551253_4511519301794053433_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=XJVRUWXG2XQQ7kNvgGgHFU7&_nc_ht=scontent-mnl1-2.xx&oh=00_AYBmNGkXXa41RnPfXSVJN5Vgf51LepiZkX5rqd6E6mvggQ&oe=666628D2">
+                    <img src="https://imagetolink.com/ib/vFRwfeKHKG.png" alt="batingaw festival" title="https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/428613707_707577278217661_5574105050881602331_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ISjYqaFZjvwQ7kNvgFIQcKD&_nc_ht=scontent.fmnl4-1.fna&oh=00_AYBKv7VaoTY1R0ZEEB-yYkCv_OFsEND2RISFpefKbbWMYA&oe=66663AD1">
+                </div>
+            </div>
+
+            <!-- Christmas -->
+            <div class="christmas-day" id="christmas">
+                <div class="christmas-photos">
+                    <img src="https://imagetolink.com/ib/MnpYNF44P9.png" alt="" title="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5W5zFl_ObWfjkrTnOEw8cHZL0a1qWU6Le8qF4bYCjfgpC5qL6ncbyOSiesed1BqLfE64&usqp=CAU">
+                    <img src="https://imagetolink.com/ib/aQjPzyBwB7.png" alt="" title="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScU-f5yLLsD5cBYuqqmPkgs70Fk1nQkLoZKZK6hwUS_QXIYSxN6VvPNipe7Bs5v0059F0&usqp=CAU">
+                    <img src="https://imagetolink.com/ib/SS7FI6sfDT.png" alt="" title="       https://i.ytimg.com/vi/zOZydaicsjo/maxresdefault.jpg">
+                    <img src="https://imagetolink.com/ib/4ZsYCMvhRG.png" alt="" title="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5_YNoj55gvjvxgLG2QmwysM-BNoKVdCYgi-vCGpNmjGtWJsPqFBiszwscIzDYqn6Dvg&usqp=CAU">
+                </div>
+
+                <div class="christmas-essay">
+                    <h1>Christmas in Cabuyao</h1>
+                    <h4><b>Date:</b> December 25</h4>
+                    <p>
+                        A time of joy, community, and festivities, Christmas is observed in Cabuyao, an exciting city in the Philippines. The streets and houses become decorated out in vibrant lights and decorations as December draws near, resulting in a charming ambiance that uplifts the spirits of the locals. The Cabuyenos eagerly await this time of year since it is not only a religious festival but also a cultural occasion that deepens ties between family and friends.
+                        <br><br>
+                        One of the highlights of the Christmas celebration in Cabuyao is the variety of rides and attractions set up throughout the city. Temporary amusement parks spring up, offering Ferris wheels, carousels, and other exciting rides that attract people of all ages. These rides provide endless entertainment and become a central hub for families and friends to gather and enjoy the festive season. Alongside the rides, food stalls offer an array of local and festive delicacies, from traditional Filipino dishes like lechon and bibingka to popular street foods such as kwek-kwek and fish balls. The combination of thrilling rides and mouth-watering food creates a lively and joyful environment, embodying the spirit of Christmas.
+                        <br><br>
+                        In conclusion, the Christmas celebration in Cabuyao is a beautiful blend of tradition, community, and festivity. The presence of rides and an abundance of delicious food makes it a unique and memorable experience for the Cabuyenos. This festive period not only highlights the rich cultural heritage of the city but also fosters a sense of unity and happiness among its residents, ensuring that the Christmas spirit remains alive and vibrant in the hearts of everyone in Cabuyao.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Santo Nino de Cabuyao Festival  -->
+            <div class="sto-nino" id="sto-nino">
+                <div class="nino-photos">
+                    <img src="https://imagetolink.com/ib/wkhET8jtYk.png" alt="sto. nino festival" title="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/420828214_688595393449183_7178976762885267818_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=CGGa2UEDgmwQ7kNvgH8A-CM&_nc_ht=scontent-mnl1-2.xx&oh=00_AYBt_x1eOowwi25zLh2Gk2p8JrZV8QkBg6hYjjWwiP0BeQ&oe=66663DBB">
+                </div>
+
+                <div class="nino-essay">
+                    <h1>Santo Nino de Cabuyao Festival </h1>
+                    <h4><b>Date: </b>April 8</h4>
+                    <p>
+                        Santo Niño, or the feast of the Child Jesus, is celebrated on the third Sunday of January, which is especially meaningful to the community. The vibrant Santo Niño de Cabuyao Festival follows a mass in the Cabuyao Church and is a deeply ingrained annual event that shapes the community's culture and customs. The festival, which began in 1981 as an act of thanks from the Alimagno family, has developed into a beloved custom that unites the residents of Cabuyao in joyful adoration.
+                        <br><br>
+                        The celebration of Santo Niño in Cabuyao has its origins in the late 1970s, when the Alimagno family organized a large-scale event in honor of Santo Niño, bringing the town together in prayer and joy after their son Kennedy survived a near-fatal accident. The Santo Niño de Cabuyao Festival is the focal point of this; it is a colorful parade that showcases the locals' intense devotion and faith through song, dance, and pictures of Santo Niño. Communities and families work together to be ready for the occasion, reinforcing their commitment with group prayers and offerings. This festival has expanded over time, bringing in new followers and cementing the ties between the locals and the faith in Cabuyao.
+                        <br><br>
+                        To sum up, Cabuyao's Santo Niño celebration is more than just a festival; it is evidence of the city's enduring faith and rich legacy. This yearly festival, known as the Santo Niño de Cabuyao Festival, is a demonstration of communal devotion and celebration, having humble origins as an act of thankfulness by the Alimagno family. Every year, the residents of Cabuyao get together to celebrate Santo Niño, which serves to both reinforce their faith and fortify the ties that bind them together as a community.
+
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- City Fiesta -->
+            <div class="city-fiesta" id="city">
+                <div class="fiesta-essay">
+                    <h1>City Fiesta</h1>
+                    <h4>Location: Cabuyao, Laguna, Philippines</h4>
+                    <p>
+                        Cabuyao, a thriving city in Laguna, Philippines, is known for its rich cultural heritage and vibrant community spirit, exemplified by its annual City Fiesta. Held every February, this grand celebration unites Cabuyeños in honoring their patron saints, showcasing local traditions, and celebrating the unity and joy that define their city. The fiesta is both a religious observance and a testament to the enduring spirit of community and cultural pride in Cabuyao.
+                        <br><br>
+                        The City Fiesta features a wide range of events reflecting the city's diverse culture. It begins with a solemn Mass and a grand procession honoring Our Lady of the Holy Rosary and Saint Polycarp. These ceremonies instill a sense of reverence and gratitude among participants. Following the religious observances, the city bursts into a lively celebration with parades, street dancing, and music, showcasing local talents. Traditional games, food fairs, and cultural exhibits further enrich the fiesta, offering a delightful mix of old and new that appeals to both residents and visitors.
+                        <br><br>
+                        More than just an annual event, Cabuyao's City Fiesta celebrates the city's identity, heritage, and community spirit. Through its blend of religious devotion, cultural displays, and communal activities, the fiesta reinforces community bonds and highlights Cabuyao's rich traditions. As Cabuyeños gather each year, they honor their past and patron saints while reaffirming their commitment to the values of unity, joy, and cultural pride that define Cabuyao.
+
+                    </p>
+                </div>
+
+                <div class="fiesta-photos">
+                    <img src="https://imagetolink.com/ib/ZVgBXsIewV.png" alt="cabuyao fiesta" title="https://scontent.fmnl4-5.fna.fbcdn.net/v/t39.30808-6/428616427_707576794884376_4028795355838920971_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=kElpkp2SohcQ7kNvgGhMd2O&_nc_ht=scontent.fmnl4-5.fna&oh=00_AYDWB8HvgieMLQSbFcIw3Vu4m_aAC8pdmo92L5vNVFqgsw&oe=66664746">
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- ABOUT TAB -->
+        <div id="About" class="tab-content">
+            <div class="about-title">
+                <h1>About Us</h1>
+                <p>our story, purpose, and mission</p>
+                <a href="" id="scrollDown3"><img src="https://imagetolink.com/ib/QSimiEROcu.png " alt=""></a>
+            </div>
+
+            <div class="about-website" id="about-website">
+                <div class="website-description">
+                    <h1>About the Website</h1>
+
+                    <p>
+                        The website is made to promote the city of Cabuyao, showing off its rich culture, tasty food, and unique attractions. It's a handy guide for both locals and tourists, with lots of information on the best places to visit, eat, and enjoy in Cabuyao. You’ll find stories about historic sites, reviews of tasty local dishes, and updates on events and festivals. With lots of great pictures and easy-to-read descriptions, the website wants to share the charm and beauty of Cabuyao, inviting more people to come and enjoy this lively city.
+                    </p>
+                </div>
+
+                <div class="website-photo">
+                    <img src="https://farm8.staticflickr.com/7662/17389172955_a5ccda5892_b.jpg">
+                    
+                </div>
+            </div>
+
+            <div class="about-developers">
+                <div class="developers-photo">
+                    <img src="https://scontent.fmnl9-2.fna.fbcdn.net/v/t39.30808-6/462031633_931153482186240_8334873613217091468_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGemGX0qiieWJmd4NiZJpVAKbW9OGLreIQptb04Yut4hMKYIzdZ2M0fV4rINRymbH_k6uTx6tZGrc0DjFJjvSOm&_nc_ohc=FrmCLZfJxaIQ7kNvgGg1XuL&_nc_zt=23&_nc_ht=scontent.fmnl9-2.fna&_nc_gid=AH8qZFtJt24gs2a2iSVX7g_&oh=00_AYAGLqDNLPoIUk6t9hU1oMCLg1tfO3j81g45fMO_jjZGdA&oe=67551C22">
+                </div>
+
+                <div class="developers-description">
+                    <h1> About the Developers </h1>
+
+                    <p>
+                        The website was created by two second-year BSIT students who love their hometown, Cabuyao. They used their tech skills and love for the city's culture and attractions to build a site that shows off the best of Cabuyao. Their hard work is clear in the website's easy-to-use design, which gives visitors a fun and informative experience. Through their efforts, they hope to get more people to discover and enjoy the lively life and rich history of Cabuyao.
+                        <br> <br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="developer-profile">
+                <div class="profile1">
+                    <div class="profile-photo">
+                        <img src="https://scontent.fmnl9-2.fna.fbcdn.net/v/t39.30808-6/462031633_931153482186240_8334873613217091468_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGemGX0qiieWJmd4NiZJpVAKbW9OGLreIQptb04Yut4hMKYIzdZ2M0fV4rINRymbH_k6uTx6tZGrc0DjFJjvSOm&_nc_ohc=FrmCLZfJxaIQ7kNvgGg1XuL&_nc_zt=23&_nc_ht=scontent.fmnl9-2.fna&_nc_gid=AH8qZFtJt24gs2a2iSVX7g_&oh=00_AYAGLqDNLPoIUk6t9hU1oMCLg1tfO3j81g45fMO_jjZGdA&oe=67551C22" alt="">
+                    </div>
+
+                    <div class="profile-text">
+                        <h2>Naivelyn Felipe</h2>
+                        <p>
+                            Naivelyn is a second-year BSIT student who is enthusiastic about software development and digital innovation. With a particular interest in front-end development, Naivelyn focuses on building dsigns and making online platform that highlights the city's best features and attractions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="profile2">
+                    <div class="profile-photo">
+                        <img src="https://scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-1/422204687_3004149699716079_4853521503030688460_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeH0A0j1U_GbC-TIx-Qq8P0Uu4HQ9QB0G4K7gdD1AHQbghSvCybE0gXmPjKBZrxv78EN6g3VB3F4hglcs1x1gu02&_nc_ohc=PHtFQl-tcVwQ7kNvgGq8fI_&_nc_zt=24&_nc_ht=scontent.fmnl9-4.fna&_nc_gid=AWBYyQptQN8-jWzmWKKIuvi&oh=00_AYBGc4tQOTV85tQTdTDQdjoDhn9lgxGqO5ifrw0RnxtTAQ&oe=675530A5" alt="">
+                            </div>
+
+                    <div class="profile-text">
+                        <h2>Joshua Gallardo</h2>
+                        <p>
+                            Joshua Gallardo is a second-year BSIT student. he is dedicated to using his skills to create impactful digital solutions that promote local culture and tourism in Cabuyao. Nixie excels in back-end development, ensuring that websites are easily functional. Outside of his academic pursuits, he enjoys exploring new technologies, participating in IT coding events competitions, and engaging in community service projects. His love for his hometown drives him to continuously innovate and contribute to the digital representation of Cabuyao.
+                        </p>
+                    </div>
+                </div>
+            <div class="profile3">
+                <div class="profile-photo">
+                    <img src="https://scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-1/462852862_3882324371999249_8664162555446681454_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeEs5Pd_oYBrivShHbRl0BPUn7CSGIRbnV6fsJIYhFudXqxhIeogl-7lcAK9N2umTU7aDKQM38OqF_v8q7YbQOUM&_nc_ohc=S0Im_WIA6ZQQ7kNvgE9rLP9&_nc_zt=24&_nc_ht=scontent.fmnl9-4.fna&_nc_gid=ApkWqKw9Fxr1ZA591YtrmM3&oh=00_AYAJ9LoMmHM_-8jh30pJOTH7I944TvnPZwmqwkAR73lz8Q&oe=67552E61" alt="">
+                </div>
+                <div class="profile-text">
+                    <h2>Dustine Dizon</h2>
+                    <p>
+                        Dustine is a passionate BSIT student specializing in full-stack web development. With a deep interest in both front-end and back-end technologies, Dustine contributes to building seamless user experiences and efficient systems. His creative problem-solving skills and dedication to teamwork drive the success of collaborative projects, including this platform showcasing Cabuyao’s culture.
+                    </p>
+                </div>
+             </div>
+             </div>
+
+
+<!-- BOOK NOW BUTTON -->
+<div id="Book" class="tab-content">
+            <div class="book-title">
+                <h1>Book Now</h1>
+                <p>Your Ultimate Guide to Finding your Perfect Stay here in Cabuyao</p>
+                <a href="" id="scrollDown4"><img src="https://imagetolink.com/ib/QSimiEROcu.png " alt=""></a>
+            </div>
+
+            <div class="book-previews" id="book-previews">
+
+                <div class="card">
+                    <img src="https://imagetolink.com/ib/j8weSpFfa2.png" >
+                    <button onclick="document.location='https://www.google.com/maps/place/Yes+Hotel+Cabuyao,+Laguna/@14.2428569,121.1289964,17z/data=!4m11!3m10!1s0x33bd639c4ff07c31:0x2ff2c011e1a610ce!5m2!4m1!1i2!8m2!3d14.2428517!4d121.1315713!9m1!1b1!16s%2Fg%2F11t5l4k7p0?entry=ttu'" >View</button>
+                </div>
+    
+                <div class="card">
+                    <img src="https://imagetolink.com/ib/JxE2uIS4KL.png">
+                    <button onclick="document.location='https://www.google.com/maps/place/Rizmy+Apartment+Hotel/@14.2430318,121.1153097,17z/data=!4m11!3m10!1s0x33bd628c4253f65f:0xa44c1f115a7bffaf!5m2!4m1!1i2!8m2!3d14.2430266!4d121.1178846!9m1!1b1!16s%2Fg%2F11c6d_r13t?entry=ttu'" >View</button>
+                </div>
+    
+                <div class="card">
+                    <img src="https://imagetolink.com/ib/8MiHZ5K7LV.png" >
+                    <button onclick=" document.location='https://www.google.com/maps/place/OYO+736+Jade+Apartelle/@14.2576145,121.1246079,17z/data=!4m11!3m10!1s0x33bd63e253bed31f:0x98acca330da6a3be!5m2!4m1!1i2!8m2!3d14.2576093!4d121.1271828!9m1!1b1!16s%2Fg%2F11qpsbvp37?entry=ttu'">View</button>
+                </div>
+
+                
+                <div class="card">
+                    <img src="https://imagetolink.com/ib/6185tUprQw.png" >
+                    <button onclick="document.location='https://www.google.com/maps/place/Kasile+Hills+Resort+and+Events+Venue/@14.1870284,121.0284332,17z/data=!4m11!3m10!1s0x33bd7bbdf0c8f4ff:0x550a53f7a0ce0cd6!5m2!4m1!1i2!8m2!3d14.1870232!4d121.0310081!9m1!1b1!16s%2Fg%2F11s2kn_qgw?entry=ttu'">View</button>
+                </div>
+    
+            </div>
+
+            <div class="form-container">
+                <!-- FORM -->
+                <div class="form">
+                    <h5>Customer Details</h5>
+                    <hr>
+                    <form id="customer-form">
+                        <input type="text" id="fname" name="fname" placeholder="First Name" required> 
+                        <input type="text" id="lname" name="lname" placeholder="Last Name" required> <br>
+                        <input type="text" id="home" name="home" placeholder="Home Address" required>
+                        <br>
+
+                        <div class="info">
+                            <input type="text" id="email" name="email" placeholder="Email Address" required>
+                            <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+                        </div>
+
+                        <div class="selected-hotel">
+                            <select id="hotel" name="hotel" required>
+                                <option value="" disabled selected hidden>Which Hotel are you interested in?</option>
+                                <option value="1">Yes Hotel</option>
+                                <option value="2">Rimzy Apartment Hotel</option>
+                                <option value="3">OYO 736 Jade Apartelle</option>
+                                <option value="4">Kasile Hills</option>
+                            </select>
+                        </div>
+            
+                        <div class="book-date">
+                            <div class="date-field">
+                                <label for="checkin-date">Check-in Date:</label>
+                                <input type="date" id="checkin-date" name="checkin-date" required>
+                            </div>
+                            <div class="date-field">
+                                <label for="checkout-date">Check-out Date:</label>
+                                <input type="date" id="checkout-date" name="checkout-date" required>
+                            </div>
+                        </div>
+
+                        <label for="appt">Select a time:  </label> 
+                        <input type="time" id="appt" name="appt" required>
+
+                        <div class="people">
+                            <div class="number-people">
+                                <select id="adults" name="adults" required>
+                                    <option value="" disabled selected hidden>No. of Adults</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+
+                            <div class="number-people">
+                                <select id="children" name="children" required>
+                                    <option value="" disabled selected hidden>No. of Children</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <label for="message">Any Questions?</label><br>
+                            <textarea name="message" id="message" rows="7" cols="50"></textarea>
+                        </div>
+
+                        <input type="submit">
+                    </form>
+                </div>
+
+                <div class="form-photo">
+                    <img src="https://imagetolink.com/ib/JqkywSfBZj.png" alt="">
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <h3>Contact Us: </h3>
+                    <p>Email: cabuyaoWonder@gmail.com</p>
+                    <p>Phone: +012 456 789</p>
+                    <p>Address: Brgy. Mamatid, Cabuyao, Laguna</p>
+                </div>
+                <div class="footer-content">
+                    <h3>Quick Links</h3>
+                    <ul class="list">
+                        <li><a href="" onclick="openTab('Home')">Home</a></li>
+                        <li><a href="" onclick="openTab('Destination')">Destination</a></li>
+                        <li><a href="" onclick="openTab('Foods')">Food</a></li>
+                        <li><a href="" onclick="openTab('Culture')">Culture</a></li>
+                        <li><a href="" onclick="openTab('About')">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h3>Follow Us</h3>
+                    <ul class="social-icons">
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bottom-bar">
+                <p>&copy; 2024 BSIT 2B, Cabuyao Wonder. All rights reserved</p>
+            </div>
+        </footer>
+
+        
+
+        <script>
+            function openTab(tabName) {
+                var i;
+                var x = document.getElementsByClassName("tab-content");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                document.getElementById(tabName).style.display = "block";
+                var activeTab = document.querySelector(".topnav .active");
+                if (activeTab) activeTab.classList.remove("active");
+                var buttons = document.querySelectorAll(".topnav button");
+                buttons.forEach(button => {
+                    if (button.textContent.trim() === tabName) {
+                        button.classList.add("active");
+                    }
+                });
+
+                
+            // Update background image based on the tab
+            var body = document.querySelector("body");
+            switch (tabName) {
+                case "Home":
+                    body.style.backgroundImage = "url(https://misadito.com/images/churches/Laguna-Cabuyao-St-Polycarp-Parish-Church.jpg)";
+                    break;
+                case "Destination":
+                    body.style.backgroundImage = "url(https://mediaim.expedia.com/destination/2/689be935369aca5e56382dec78b4bdf4.jpg?impolicy=fcrop&w=1040&h=580&q=mediumHigh)";
+                    break;
+                case "Foods":
+                    body.style.backgroundImage = "url(https://www.crownasia.com.ph/wp-content/uploads/2023/07/For-Those-Who-Want-to-Enjoy-Good-Food-at-an-Affordable-Price-Head-to-Hains-1024x704.webp)";
+                    break;
+                case "Culture":
+                    body.style.backgroundImage = "url(https://th.bing.com/th/id/R.f25dddbb91abdc34a0a53ccab75c742f?rik=zXIRRibRtpQkGA&riu=http%3a%2f%2fwww.traveltothephilippines.info%2fwp-content%2fuploads%2f2012%2f08%2fLaguna-Pinya-Festival6.jpg&ehk=TCJMRbL7T%2bsoS9RbDpkxwlmUuehyN%2bGn%2b2HGn23zhiQ%3d&risl=&pid=ImgRaw&r=0)";
+                    break;
+                case "About":
+                    body.style.backgroundImage = "url(https://th.bing.com/th/id/OIP.Mtf3_MG4B3MbCwNNJJNcdgHaE6?w=720&h=478&rs=1&pid=ImgDetMain)";
+                    break;
+                case "Book":
+                    body.style.backgroundImage = "url(https://virtual.reality.travel/wp-content/uploads/2021/07/church-of-st-polycarp-cabuyao-1700x900.jpg)";
+                    break;
+                default:
+                    body.style.backgroundImage = "url(https://misadito.com/images/churches/Laguna-Cabuyao-St-Polycarp-Parish-Church.jpg)";
+            }}
+
+            // Set full-screen background styles
+            document.body.style.backgroundSize = "cover"; // Ensures the image covers the entire screen
+            document.body.style.backgroundPosition = "center"; // Centers the image
+            document.body.style.backgroundRepeat = "no-repeat"; // Avoids tiling
+            document.body.style.height = "100vh"; // Sets the body height to full viewport
+            document.body.style.width = "100vw"; // Ensures width matches the viewport
+            
+            //scroll down for the destination
+            document.getElementById("scrollDown").addEventListener("click", function(event) {
+                event.preventDefault();
+                document.getElementById("polycarpChurch").style.display = "grid";
+                document.getElementById("polycarpChurch").scrollIntoView({ behavior: 'smooth' });
+            });
+
+            //scroll down for the food
+            document.getElementById("scrollDown1").addEventListener("click", function(event) {
+                event.preventDefault();
+                document.getElementById("*****-pao").style.display = "grid";
+                document.getElementById("*****-pao").scrollIntoView({ behavior: 'smooth' });
+            });
+
+            //scroll down for the culture
+            document.getElementById("scrollDown2").addEventListener("click", function(event) {
+                event.preventDefault();
+                document.getElementById("batingaw").style.display = "grid";
+                document.getElementById("batingaw").scrollIntoView({ behavior: 'smooth' });
+            });
+
+            //scroll down for the about
+            document.getElementById("scrollDown3").addEventListener("click", function(event) {
+                event.preventDefault();
+                document.getElementById("about-website").style.display = "grid";
+                document.getElementById("about-website").scrollIntoView({ behavior: 'smooth' });
+            });
+
+            //scroll down for the booking
+            document.getElementById("scrollDown4").addEventListener("click", function(event) {
+                event.preventDefault();
+                document.getElementById("book-previews").style.display = "grid";
+                document.getElementById("book-previews").scrollIntoView({ behavior: 'smooth' });
+            });
+
+            function openDestinationTab(sectionId) {
+                openTab('Destination');
+                
+                setTimeout(function() {
+                    var section = document.getElementById(sectionId);
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }, 100); 
+            }
+
+            
+            function openFoodTab(sectionId) {
+                openTab('Foods');
+
+                setTimeout(function() {
+                    var section = document.getElementById(sectionId);
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }, 100); 
+            }
+
+            
+            function openCultureTab(sectionId) {
+                openTab('Culture');
+                
+                setTimeout(function() {
+                    var section = document.getElementById(sectionId);
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }, 100); 
+            }
+
+            document.getElementById('customer-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the form from submitting in the traditional way
+
+                // Get form data
+                const fname = document.getElementById('fname').value;
+                const lname = document.getElementById('lname').value;
+                const home = document.getElementById('home').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const hotel = document.getElementById('hotel').value;
+                const checkinDate = document.getElementById('checkin-date').value;
+                const checkoutDate = document.getElementById('checkout-date').value;
+                const appt = document.getElementById('appt').value;
+                const adults = document.getElementById('adults').value;
+                const children = document.getElementById('children').value;
+                const message = document.getElementById('message').value;
+
+                // Check if any field is empty
+                if (!fname || !lname || !home || !email || !phone || !hotel || !checkinDate || !checkoutDate || !appt || !adults || !children.trim()) {
+                    alert('Please fill in all the fields.');
+                    return;
+                }
+
+                // Email format validation
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email)) {
+                    alert('Please enter a valid email address.');
+                    return;
+                }
+
+                // Phone number format validation
+                const phonePattern = /^\d{10}$/;
+                if (!phonePattern.test(phone)) {
+                    alert('Please enter a valid 10-digit phone number.');
+                    return;
+                }
+
+                // Check-in date should be before check-out date
+                if (new Date(checkinDate) >= new Date(checkoutDate)) {
+                    alert('Check-in date must be before check-out date.');
+                    return;
+                }
+
+                // Create alert message
+                const alertMessage = `
+                    First Name: ${fname}
+                    Last Name: ${lname}
+                    Home Address: ${home}
+                    Email Address: ${email}
+                    Phone Number: ${phone}
+                    Hotel: ${hotel}
+                    Check-in Date: ${checkinDate}
+                    Check-out Date: ${checkoutDate}
+                    Time: ${appt}
+                    Number of Adults: ${adults}
+                    Number of Children: ${children}
+                `;
+
+                // Display the alert
+                alert('Please verify your information below' + alertMessage);
+                alert('Reservation will be sent on your email address. Thank you!')
+
+                // Clear the form after successful submission
+                document.getElementById('customer-form').reset();
+            });
+
+
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+        <script>
+          $(document).ready(function(){
+            $('.responsive').slick({
+                dots: true,
+                prevArrow: $('.prev'),
+                nextArrow: $('.next'),
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
+            // Custom previous button click event
+            $('.prev').on('click', function() {
+                $('.responsive').slick('slickPrev');
+            });
+
+            // Custom next button click event
+            $('.next').on('click', function() {
+                $('.responsive').slick('slickNext');
+            });
+        })    
+
+        
+        </script>
+    </body>
+</html>
