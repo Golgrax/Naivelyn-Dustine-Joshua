@@ -937,52 +937,62 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
         <script>
-          $(document).ready(function(){
-            $('.responsive').slick({
-                dots: true,
-                prevArrow: $('.prev'),
-                nextArrow: $('.next'),
-                infinite: true,
-                speed: 500,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                            infinite: true,
-                            dots: true
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
-            });
+    $(document).ready(function () {
+    // Loop through each `.carousel` and initialize Slick
+    $('.carousel').each(function () {
+        const carousel = $(this); // Reference to the current carousel
+        const slider = carousel.find('.responsive'); // Find the specific slider
+        const prevButton = carousel.find('.prev'); // Scoped `prev` button
+        const nextButton = carousel.find('.next'); // Scoped `next` button
 
-            // Custom previous button click event
-            $('.prev').on('click', function() {
-                $('.responsive').slick('slickPrev');
-            });
+        // Initialize Slick for the current carousel
+        slider.slick({
+            dots: true,
+            prevArrow: prevButton,
+            nextArrow: nextButton,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true,
+                    },
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    },
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    },
+                },
+            ],
+        });
 
-            // Custom next button click event
-            $('.next').on('click', function() {
-                $('.responsive').slick('slickNext');
-            });
-        })    
+        // Custom previous button click event for this specific carousel
+        prevButton.on('click', function () {
+            slider.slick('slickPrev'); // Move only this slider
+        });
+
+        // Custom next button click event for this specific carousel
+        nextButton.on('click', function () {
+            slider.slick('slickNext'); // Move only this slider
+        });
+    });
+});
+ 
 
         
         </script>
