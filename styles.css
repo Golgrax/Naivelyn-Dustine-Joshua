@@ -925,8 +925,9 @@ body{
 .sto-nino {
     margin-top: 100px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
 }
 
 .nino-photos {
@@ -939,15 +940,38 @@ body{
 .nino-photos img{
     margin-bottom: -80px;
     z-index: 1;
+    /* margin-top: -30px; */
+    /* margin-right: 10px; */
+    /* border-radius: 20px; */
+    max-width: 350px;
+    height: auto;
+    /* display: block; */
+    margin: 13px;
+    /* margin-top: 0px; */
+    line-height: 30px;
+    /* text-align: justify; */
+    /* color: white; */
+    background-color: rgb(180 75 75);
+    padding: 2.5px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 4px rgb(0 0 0);
+    animation: moveUp 0.5s ease-out forwards;
+    border-radius: 20px;
 }
 
 .nino-essay {
     background-color: #A43838;
-    text-align: center;
-    width: 90%;
-    box-sizing: border-box;
-    padding: 40px;
     margin-top: 20px;
+    margin-left: 10px;
+    line-height: 30px;
+    font-size: 17px;
+    font-family: archivo;
+    text-align: justify;
+    color: white; /* Adjust for contrast */
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 15px; /* Round the corners */
+    box-shadow: 0px 0px 20px 2px rgb(47 27 27); /* Add shadow */
 }
 
 .nino-essay h1{
@@ -1005,8 +1029,25 @@ body{
 }
 
 .fiesta-photos img{
-    width: 350px;
+    /* margin-top: -30px; */
+    /* margin-right: 10px; */
+    /* border-radius: 20px; */
+    max-width: 400%;
     height: auto;
+    /* display: block; */
+    margin: 13px;
+    /* margin-top: 0px; */
+    line-height: 30px;
+    /* text-align: justify; */
+    /* color: white; */
+    background-color: rgb(238 61 61 / 67%);
+    padding: 2.5px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 4px rgb(121 21 21);
+    animation: moveUp 0.5s ease-out forwards;
+    margin-top: 0px;
+    margin-right: 10px;
+    border-radius: 20px;
 }
 
 
@@ -1240,7 +1281,7 @@ body {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px 6px rgb(0 0 0 / 31%);
 }
 
 .card img {
@@ -2462,6 +2503,10 @@ body{
     background-color: #A43838;
     margin-left: 30px;
     margin-right: 30px;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: inset 0px 0px 20px 20px #d94646;
+    box-shadow: 0px 0px 20px 7px #552929;
 }
 
 .batingaw-essay h1, .batingaw-essay h4, .batingaw-essay p{
@@ -2505,8 +2550,26 @@ body{
 
 .batingaw-photos img{
     width: 420px;
-    height: auto;
+    height: 300px;
     margin-top: 20px;
+    /* margin-top: -30px; */
+    /* margin-right: 10px; */
+    /* border-radius: 20px; */
+    max-width: 3000px;
+    /* display: block; */
+    margin: 13px;
+    /* margin-top: 0px; */
+    line-height: 30px;
+    /* text-align: justify; */
+    /* color: white; */
+    background-color: rgb(87 26 26 / 67%);
+    padding: 5.5px;
+    border-radius: 15px;
+    box-shadow: 1px -1px 20px 11px rgb(63 20 20);
+    animation: moveUp 0.5s ease-out forwards;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 20px;
 }
 
 /* Christmas in Cabuyao */
@@ -2536,7 +2599,23 @@ body{
 }
 
 .christmas-photos img{
-    margin-top: -30px;
+    /* margin-top: -30px; */
+    /* margin-right: 10px; */
+    /* border-radius: 20px; */
+    max-width: 45%;
+    height: auto;
+    /* display: block; */
+    margin: 13px;
+    /* margin-top: 0px; */
+    line-height: 30px;
+    /* text-align: justify; */
+    /* color: white; */
+    background-color: rgb(84 125 99 / 67%);
+    padding: 2.5px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 4px rgb(0 0 0);
+    animation: moveUp 0.5s ease-out forwards;
+    margin-top: 0px;
     margin-right: 10px;
     border-radius: 20px;
 }
@@ -2545,8 +2624,9 @@ body{
 .sto-nino {
     margin-top: 100px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
 }
 
 .nino-photos {
@@ -2557,7 +2637,7 @@ body{
 }
 
 .nino-photos img{
-    margin-bottom: -80px;
+    margin-bottom: -780px;
     z-index: 1;
 }
 
@@ -3100,43 +3180,43 @@ footer a:hover{
 }
 
 .rounded-text-background {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.7); 
     color: white; /* Text color */
-    padding: 15px 20px; /* Adjust padding for desired size */
+    padding: 15px 20px; 
     border-radius: 20px; /* Rounded corners */
-    font-family: 'Inter', sans-serif; /* Use a clean font */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: 'Inter', sans-serif; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
     text-align: center; /* Center align text */
-    display: inline-block; /* Maintain size around content */
-    margin: 10px auto; /* Adjust spacing around element */
+    display: inline-block; 
+    margin: 10px auto; 
 }
 
-/* Style for the navigation buttons */
+
 .topnav button {
     color: white; /* Text color */
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 500;
-    padding: 10px 20px; /* Adjust padding for size */
-    margin: 5px; /* Spacing between buttons */
-    border: 2px solid rgba(255, 255, 255, 0.7); /* Semi-transparent border */
+    padding: 10px 20px; 
+    margin: 5px; 
+    border: 2px solid rgba(255, 255, 255, 0.7); 
     border-radius: 8px; /* Rounded corners */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); 
     text-align: center;
     cursor: pointer;
-    transition: all 0.3s ease; /* Smooth hover effect */
+    transition: all 0.3s ease; 
 }
 
 /* Hover effect for buttons */
 .topnav button:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Lighten background on hover */
-    border-color: rgba(255, 255, 255, 1); /* Fully opaque border */
-    color: #ffcc00; /* Change text color on hover */
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-color: rgba(255, 255, 255, 1); 
+    color: #ffcc00; 
 }
 
 /* Active button style */
 .topnav button.active {
-    background-color: rgba(255, 255, 255, 0.8); /* Light background for active state */
-    color: black; /* Contrasting text color */
-    border: 2px solid rgba(0, 0, 0, 0.7); /* Darker border for active */
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: black; 
+    border: 2px solid rgba(0, 0, 0, 0.7); 
 }
