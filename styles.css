@@ -10,6 +10,10 @@ body{
     overflow: visible;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 /*---------- TOP NAVIGATION BUTTONS ----------*/
 .topnav{
     overflow: hidden;
@@ -1526,7 +1530,7 @@ body{
 
 /*---------- TOP NAVIGATION BUTTONS ----------*/
 .topnav{
-    overflow: hidden;
+    overflow: overlay;
     background-color: transparent;
 }
 
@@ -2557,7 +2561,7 @@ body{
     /* border-radius: 20px; */
     max-width: 3000px;
     /* display: block; */
-    margin: 13px;
+    margin: -26px;
     /* margin-top: 0px; */
     line-height: 30px;
     /* text-align: justify; */
@@ -3180,43 +3184,43 @@ footer a:hover{
 }
 
 .rounded-text-background {
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
     color: white; /* Text color */
-    padding: 15px 20px; 
+    padding: 15px 20px; /* Adjust padding for desired size */
     border-radius: 20px; /* Rounded corners */
-    font-family: 'Inter', sans-serif; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    font-family: 'Inter', sans-serif; /* Use a clean font */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     text-align: center; /* Center align text */
-    display: inline-block; 
-    margin: 10px auto; 
+    display: inline-block; /* Maintain size around content */
+    margin: 10px auto; /* Adjust spacing around element */
 }
 
-
+/* Style for the navigation buttons */
 .topnav button {
     color: white; /* Text color */
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 500;
-    padding: 10px 20px; 
-    margin: 5px; 
-    border: 2px solid rgba(255, 255, 255, 0.7); 
+    padding: 10px 20px; /* Adjust padding for size */
+    margin: 5px; /* Spacing between buttons */
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Semi-transparent border */
     border-radius: 8px; /* Rounded corners */
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     text-align: center;
     cursor: pointer;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease; /* Smooth hover effect */
 }
 
 /* Hover effect for buttons */
 .topnav button:hover {
-    background-color: rgba(255, 255, 255, 0.2); 
-    border-color: rgba(255, 255, 255, 1); 
-    color: #ffcc00; 
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten background on hover */
+    border-color: rgba(255, 255, 255, 1); /* Fully opaque border */
+    color: #ffcc00; /* Change text color on hover */
 }
 
 /* Active button style */
 .topnav button.active {
-    background-color: rgba(255, 255, 255, 0.8); 
-    color: black; 
-    border: 2px solid rgba(0, 0, 0, 0.7); 
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for active state */
+    color: black; /* Contrasting text color */
+    border: 2px solid rgba(0, 0, 0, 0.7); /* Darker border for active */
 }
